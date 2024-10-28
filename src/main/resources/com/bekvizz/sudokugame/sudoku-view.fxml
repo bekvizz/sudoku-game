@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bekvizz.sudokugame.Controller">
+   <children>
+      <Button layoutX="284.0" layoutY="14.0" mnemonicParsing="false" onAction="#up" text="Up" />
+      <Button layoutX="541.0" layoutY="188.0" mnemonicParsing="false" onAction="#right" text="Right" />
+      <Button layoutX="14.0" layoutY="188.0" mnemonicParsing="false" onAction="#left" text="Left" />
+      <Button layoutX="277.0" layoutY="361.0" mnemonicParsing="false" onAction="#down" text="Down" />
+      <ImageView fx:id="myGif" fitHeight="147.0" fitWidth="233.0" layoutX="201.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@twilight_vibing.gif" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </ImageView>
+      <Label fx:id="titleLabel" layoutX="36.0" layoutY="31.0" text="A simple vibing app" />
+      <Label layoutX="521.0" layoutY="365.0" text="Hehehe" />
+   </children>
+</AnchorPane>
